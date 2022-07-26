@@ -103,6 +103,16 @@ nav {
     color: var(--verde-claro); 
 } 
 
+:target {
+    animation: rotate 0.8s;
+}
+
+@keyframes rotate {
+    40% {
+        transform: translateX(-20%);
+    }
+}
+
 .page__one:target {
     display: flex;
     flex-direction: column;
