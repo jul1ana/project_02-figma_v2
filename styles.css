@@ -1,0 +1,144 @@
+:root {
+    /* CORES */
+    --branco: #FFFFFF;
+    --fonte-texto: #000000; 
+    --verde-claro: #92E3A9;
+
+    /* FONTES */
+    --fonte-principal: "Poppins"; 
+}
+
+body {
+    max-width: 425px;
+    min-width: 320px;
+    background-color: var(--branco); 
+    font-family: var(--fonte-principal);  
+    margin: 0 auto; 
+}
+
+.principal {
+    background-color: var(--cor-de-fundo);
+    padding: 8%;
+}
+
+.container__first {
+    color: var(--fonte-texto);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo__principal {
+    font-size: 1.375rem;
+    font-weight: 600; 
+    margin: 1rem 0;
+}
+
+.texto {
+    font-size: 1.125rem; 
+    padding-top: 0.5em;
+}
+
+.container__secondary {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+nav {
+    margin: 2.5rem 0 1.2rem 0;
+}
+
+.pagination {
+    display: flex;
+    gap: 1rem;
+}
+
+.a__link {
+    border-radius: 50%;
+}
+
+.page__item {
+    border: 1px solid #000000;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.link__active {
+    padding: 0 0.2rem;
+    background: var(--verde-claro);
+    border: none;  
+}
+
+.buttons {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.b1 {
+    background: var(--verde-claro);
+    box-shadow: 0px 4px 10px #A1C3FC; 
+    color: var(--branco);
+    padding: 1rem 3rem;
+    width: 100%; 
+    text-align: center;
+}
+
+.button__final {
+    padding: 1rem 2.7rem;
+} 
+
+#b2 {
+    color: var(--verde-claro); 
+} 
+
+.page__one:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__two {
+    display: none;
+}
+
+.page__two:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__three {
+    display: none;
+}
+
+.page__three:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__two:target ~ .page__one {
+    display: none;
+}
+
+.page__three:target ~ .page__one {
+    display: none;
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .texto {
+        font-size: 1rem;
+        padding-top: 0.5em;
+    } 
+} 
